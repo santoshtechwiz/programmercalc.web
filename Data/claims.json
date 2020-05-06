@@ -1,0 +1,322 @@
+﻿[
+ 
+  {
+    "Claim Name": "nbf",
+    "Claim Description": "Not Before",
+    "Change Controller": "[IESG]",
+    "Reference": "[\n        RFC7519, Section 4.1.5]"
+  },
+  
+  {
+    "Claim Name": "jti",
+    "Claim Description": "JWT ID",
+    "Change Controller": "[IESG]",
+    "Reference": "[\n        RFC7519, Section 4.1.7]"
+  },
+  {
+    "Claim Name": "name",
+    "Claim Description": "Full name",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "given_name",
+    "Claim Description": "Given name(s) or first name(s)",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "family_name",
+    "Claim Description": "Surname(s) or last name(s)",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "middle_name",
+    "Claim Description": "Middle name(s)",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "nickname",
+    "Claim Description": "Casual name",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "preferred_username",
+    "Claim Description": "Shorthand name by which the End-User wishes to be referred to",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "profile",
+    "Claim Description": "Profile page URL",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "picture",
+    "Claim Description": "Profile picture URL",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "website",
+    "Claim Description": "Web page or blog URL",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "email",
+    "Claim Description": "Preferred e-mail address",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "email_verified",
+    "Claim Description": "True if the e-mail address has been verified; otherwise false",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "gender",
+    "Claim Description": "Gender",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "birthdate",
+    "Claim Description": "Birthday",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "zoneinfo",
+    "Claim Description": "Time zone",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "locale",
+    "Claim Description": "Locale",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "phone_number",
+    "Claim Description": "Preferred telephone number",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "phone_number_verified",
+    "Claim Description": "True if the phone number has been verified; otherwise false",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "address",
+    "Claim Description": "Preferred postal address",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "updated_at",
+    "Claim Description": "Time the information was last updated",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 5.1]"
+  },
+  {
+    "Claim Name": "azp",
+    "Claim Description": "Authorized party - the party to which the ID Token was issued",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 2]"
+  },
+  {
+    "Claim Name": "nonce",
+    "Claim Description": "Value used to associate a Client session with an ID Token",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 2]"
+  },
+  {
+    "Claim Name": "auth_time",
+    "Claim Description": "Time when the authentication occurred",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 2]"
+  },
+  {
+    "Claim Name": "at_hash",
+    "Claim Description": "Access Token hash value",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 2]"
+  },
+  {
+    "Claim Name": "c_hash",
+    "Claim Description": "Code hash value",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 3.3.2.11]"
+  },
+  {
+    "Claim Name": "acr",
+    "Claim Description": "Authentication Context Class Reference",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 2]"
+  },
+  {
+    "Claim Name": "amr",
+    "Claim Description": "Authentication Methods References",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 2]"
+  },
+  {
+    "Claim Name": "sub_jwk",
+    "Claim Description": "Public key used to check the signature of an ID Token",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Core 1.0, Section 7.4]"
+  },
+  {
+    "Claim Name": "cnf",
+    "Claim Description": "Confirmation",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC7800, Section 3.1]"
+  },
+  {
+    "Claim Name": "sip_from_tag",
+    "Claim Description": "SIP From tag header field parameter value",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8055][RFC3261]"
+  },
+  {
+    "Claim Name": "sip_date",
+    "Claim Description": "SIP Date header field value",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8055][RFC3261]"
+  },
+  {
+    "Claim Name": "sip_callid",
+    "Claim Description": "SIP Call-Id header field value",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8055][RFC3261]"
+  },
+  {
+    "Claim Name": "sip_cseq_num",
+    "Claim Description": "SIP CSeq numeric header field parameter value",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8055][RFC3261]"
+  },
+  {
+    "Claim Name": "sip_via_branch",
+    "Claim Description": "SIP Via branch header field parameter value",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8055][RFC3261]"
+  },
+  {
+    "Claim Name": "orig",
+    "Claim Description": "Originating Identity String",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8225, Section 5.2.1]"
+  },
+  {
+    "Claim Name": "dest",
+    "Claim Description": "Destination Identity String",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8225, Section 5.2.1]"
+  },
+  {
+    "Claim Name": "mky",
+    "Claim Description": "Media Key Fingerprint String",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8225, Section 5.2.2]"
+  },
+  {
+    "Claim Name": "events",
+    "Claim Description": "Security Events",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8417, Section 2.2]"
+  },
+  {
+    "Claim Name": "toe",
+    "Claim Description": "Time of Event",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8417, Section 2.2]"
+  },
+  {
+    "Claim Name": "txn",
+    "Claim Description": "Transaction Identifier",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8417, Section 2.2]"
+  },
+  {
+    "Claim Name": "rph",
+    "Claim Description": "Resource Priority Header Authorization",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8443, Section 3]"
+  },
+  {
+    "Claim Name": "sid",
+    "Claim Description": "Session ID",
+    "Change Controller": "[OpenID_Foundation_Artifact_Binding_Working_Group]",
+    "Reference": "[\n        OpenID Connect Front-Channel Logout 1.0, Section 3]"
+  },
+  {
+    "Claim Name": "vot",
+    "Claim Description": "Vector of Trust value",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8485]"
+  },
+  {
+    "Claim Name": "vtm",
+    "Claim Description": "Vector of Trust trustmark URL",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8485]"
+  },
+  {
+    "Claim Name": "attest",
+    "Claim Description": "Attestation level as defined in SHAKEN framework",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8588]"
+  },
+  {
+    "Claim Name": "origid",
+    "Claim Description": "Originating Identifier as defined in SHAKEN framework",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8588]"
+  },
+  {
+    "Claim Name": "act",
+    "Claim Description": "Actor",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8693, Section 4.1]"
+  },
+  {
+    "Claim Name": "scope",
+    "Claim Description": "Scope Values",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8693, Section 4.2]"
+  },
+  {
+    "Claim Name": "client_id",
+    "Claim Description": "Client Identifier",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8693, Section 4.3]"
+  },
+  {
+    "Claim Name": "may_act",
+    "Claim Description": "Authorized Actor - the party that is authorized\n        to become the actor",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8693, Section 4.4]"
+  },
+  {
+    "Claim Name": "jcard",
+    "Claim Description": "jCard data",
+    "Change Controller": "[IESG]",
+    "Reference": "[RFC8688][RFC7095]"
+  },
+  {
+    "Claim Name": "at_use_nbr",
+    "Claim Description": "Number of API requests for which the access token can be used",
+    "Change Controller": "[ETSI]",
+    "Reference": "[ETSI GS NFV-SEC 022 V2.7.1]"
+  }
+]

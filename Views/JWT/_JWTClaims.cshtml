@@ -1,0 +1,30 @@
+ @model programmercalc.web.Models.JWTInput
+
+<div class="row">
+    <div class="col-md-12 mx-auto">
+        <table class="table" id="table">
+            <tr>
+                <td>Type</td>
+                <td>Value</td>
+                <td>Add</td>
+            </tr>
+            @for (var index = 0; index < Model.Claims?.Count(); index++) { 
+               <tr data-id="@index">
+                <td>
+                    <input type="text" asp-for="@Model.Claims[index].Type" class="form-control">
+                    @* <select asp-for="@Model.Claims[index].Type" class="form-control" asp-items="@Model.DDLClaims"></select> *@
+                    <span asp-validation-for="@Model.Claims[index].Type" class="text-danger"></span>
+                </td>
+                <td>
+                    <input type="text" asp-for="@Model.Claims[index].Value" class="form-control">
+                    <span asp-validation-for="@Model.Claims[index].Value" class="text-danger"></span>
+                </td>
+                @* <td>
+                    <input type="button" class="addButton btn btn-success" value="Add" />
+                </td> *@
+                </tr>
+                }
+        </table>
+        <input type="button" value="Add Claim" class="addClaim btn btn-success">
+    </div>
+</div>

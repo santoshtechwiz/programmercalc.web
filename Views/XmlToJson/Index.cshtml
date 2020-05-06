@@ -1,0 +1,16 @@
+﻿
+@model XmlToJsonModel
+
+
+    <form  asp-action="Index" asp-controller="XmlToJson" method="post">
+
+        <div class="form-group">
+            <label>Enter XML</label>
+            <textarea asp-for="@Model.XmlData" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Enter XML</label>
+            <textarea asp-for="@Model.JsonData" class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Convert To Json" class="btn btn-lg btn-success" />
+    </form>

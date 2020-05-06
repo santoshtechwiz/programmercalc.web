@@ -1,0 +1,42 @@
+﻿@model programmercalc.web.Models.InputViewModel
+
+@{
+    ViewData["Title"] = "Programmers Calculator| Base64 To String";
+}
+
+<h1>Base64 Encoding To String</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ToUSrting" asp-controller="Base64">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input" class="control-label">Base64 String</label>
+                <textarea asp-for="Input" class="form-control"></textarea>
+                <span asp-validation-for="Input" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Output" class="control-label">Decoded String</label>
+                <textarea asp-for="Output" class="form-control"></textarea>
+                <span asp-validation-for="Output" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="button" id="sendButton" value="Convert" class="btn btn-success btn-lg" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        <script src="~/js/signalr/dist/browser/signalr.js"></script>
+        <script src="~/js/tos.js"></script>
+
+}

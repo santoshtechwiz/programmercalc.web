@@ -1,0 +1,42 @@
+@model programmercalc.web.Models.RSAViewModel
+
+<div class="col-md-6">
+    <form>
+
+        <div class="form-group">
+            <label for="plainText">Plain Text</label>
+            <textarea class="form-control" id="plainText" rows="3" asp-for="PlainText"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="cipherText">Encrypted Text</label>
+            <textarea class="form-control" id="cipherText" rows="3" asp-for="CipherText"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="publicKey">Public Key</label>
+            <textarea class="form-control" id="publicKey" rows="3" asp-for="PublicKey"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="privateKey">Private Key</label>
+            <textarea class="form-control" id="privateKey" rows="3" asp-for="PrivateKey"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="decryptedText">Decrypted Text</label>
+            <textarea class="form-control" id="decryptedText" rows="3" asp-for="DecryptedText"></textarea>
+        </div>
+
+
+
+
+        <p>
+            <input type="button" value="Generate RSA" id="sendButton" class="btn btn-primary" />
+        </p>
+
+
+    </form>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        <script src="~/js/signalr/dist/browser/signalr.js"></script>
+        <script src="~/js/rsa.js"></script>
+
+}

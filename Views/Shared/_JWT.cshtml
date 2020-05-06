@@ -1,0 +1,58 @@
+﻿@model JWTInput
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+
+            <div class="form-group row">
+                <label for="issuer" class="col-sm-2 col-form-label">Issuer</label>
+                <div class="col-sm-4">
+                    <input type="text" 
+                           asp-for="@Model.Iss"
+                           class="form-control" 
+                           name="issuer" placeholder="Issuer">
+                </div>
+                <p class="col-sm-6"> Identifier (or, name) of the server or system issuing the token. Typically a DNS name, but doesn't have to be. </p>
+            </div>
+            <div class="form-group row">
+                <label for="issuedAt" class="col-sm-2 col-form-label">Issued At</label>
+                <div class="col-sm-4">
+                    <input type="text"
+                           asp-for="@Model.Iat"
+                           class="form-control" placeholder="Issued At">
+                </div>
+                <p class="col-sm-6"> Date/time when the token was issued. (defaults to now) </p>
+            </div>
+            <div class="form-group row">
+                <label for="expiration" class="col-sm-2 col-form-label">Expiration</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control"
+                           
+                           asp-for="@Model.Exp"
+                           placeholder="Expiration">
+                </div>
+                <p class="col-sm-6"> Date/time when the token was issued. (defaults to now) </p>
+            </div>
+            <div class="form-group row">
+                <label for="audience" class="col-sm-2 col-form-label">Audience</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control"
+                           asp-for="@Model.Aud"
+                           placeholder="Audience">
+                </div>
+                <p class="col-sm-6"> Intended recipient of this token; can be any string, as long as the other end uses the same string when validating the token. Typically a DNS name. </p>
+            </div>
+            <div class="form-group row">
+                <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control"
+                           asp-for="@Model.Sub"
+                           placeholder="Subject">
+                </div>
+                <p class="col-sm-6">
+                    Identifier (or, name) of the user this token represents.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

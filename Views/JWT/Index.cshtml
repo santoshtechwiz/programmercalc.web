@@ -1,0 +1,87 @@
+@model programmercalc.web.Models.JWTViewModel
+
+
+
+@{
+    ViewData["Title"] = "Programmers Calculator| Decode JWT Token";
+}
+
+<hr />
+@{
+    var jwt = @"JSON Web Token (JWT) is an open standard (RFC 7519)
+that defines a compact and self-contained way for securely
+transmitting information between parties as a JSON object.
+This information can be verified and trusted because it is digitally
+signed.
+";
+    var jwtComponent = @"The header typically consists of two parts: the type of
+the token, which is JWT, and the signing algorithm being used, such
+as `HMAC SHA256 or RSA`. Then, this JSON is Base64Url encoded to form the first part of the JWT.";
+}
+<div class="row">
+    <div class="col-md-6">
+        <form asp-controller="JWT" method="POST">
+
+            <div class="form-group">
+                <label for="jwtToken">JWT Token</label>
+                <textarea asp-for="JWTString" class="form-control" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="Decode" class="btn btn-lg btn-success">
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <markdown>
+            ### What is JWT?
+            > @jwt;
+
+            ### What are the main components?
+            @jwtComponent;
+        </markdown>
+    </div>
+
+    <div class="col-md-6">
+
+        <h2>JWT Decoded</h2>
+        @if (Model.Header != null)
+        {
+            <div class="panel panel-default">
+                <div class="panel-body">JWT Header</div>
+
+
+                <markdown>
+                    ```json
+                    @Model.Header;
+                    ```
+                </markdown>
+
+
+
+
+
+
+            </div>
+        }
+        @if (Model.Payload != null)
+        {
+            <div class="panel panel-default">
+                <div class="panel-body">JWT Payload</div>
+
+
+                <markdown>
+                    ```json
+                    @Model.Payload;
+                    ```
+
+                </markdown>
+
+
+
+
+
+            </div>
+        }
+    </div>
+</div>
+

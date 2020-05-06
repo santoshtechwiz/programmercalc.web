@@ -1,0 +1,66 @@
+﻿@model JWTInput
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="form-group row">
+                <label for="issuer" class="col-sm-2 col-form-label">Secret Key</label>
+                <div class="col-sm-5">
+                    <input type="text" asp-for="@Model.Key" class="form-control"
+                     placeholder="Secret Key">
+                    <span asp-validation-for="@Model.Key" class="alert alert-danger"></span>
+                </div>
+                <p class="col-sm-5"> Secret Key for signing </p>
+            </div>
+            <div class="form-group row">
+                <label for="algorithm" class="col-sm-2 col-form-label">Hash Algorithm</label>
+                <div class="col-sm-5">
+                    <select asp-for="@Model.Algorithm" class="form-control input-md" id="algorithm">
+                        <option value="HS256">HS256</option>
+                        <option value="HS384">HS384</option>
+                        <option value="HS512">HS512</option>
+                    </select>
+                </div>
+                <p class="col-sm-5"> Hash Algorithm </p>
+            </div>
+            <div class="form-group row">
+                <label for="issuer" class="col-sm-2 col-form-label">Issuer</label>
+                <div class="col-sm-5">
+                    <input type="text" asp-for="@Model.Iss" class="form-control" name="issuer" placeholder="Issuer">
+                </div>
+                <p class="col-sm-5"> Identifier (or, name) of the server or system issuing the token.  </p>
+            </div>
+            <div class="form-group row">
+                <label for="issuedAt" class="col-sm-2 col-form-label">Issued At</label>
+                <div class="col-sm-5">
+                    <input type="date" asp-for="@Model.Iat" class="form-control" placeholder="Issued At">
+                </div>
+                <p class="col-sm-5"> Date/time when the token was issued. (defaults to now) </p>
+            </div>
+            <div class="form-group row">
+                <label for="expiration" class="col-sm-2 col-form-label">Expiration</label>
+                <div class="col-sm-5">
+                    <input type="date" class="form-control" asp-for="@Model.Exp" placeholder="Expiration">
+                </div>
+                <p class="col-sm-5"> Date/time when the token was issued. (defaults to now) </p>
+            </div>
+            <div class="form-group row">
+                <label for="audience" class="col-sm-2 col-form-label">Audience</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" asp-for="@Model.Aud" placeholder="Audience">
+                </div>
+                <p class="col-sm-5"> Intended recipient of this token </p>
+            </div>
+            <div class="form-group row">
+                <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" asp-for="@Model.Sub" placeholder="Subject">
+                </div>
+                <p class="col-sm-5">
+                    Identifier (or, name) of the user this token represents.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

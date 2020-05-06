@@ -1,0 +1,30 @@
+﻿@model programmercalc.web.Models.JWTInput
+
+@{
+    ViewData["Title"] = "Programmers Calculator| Create JWT Token";
+}
+
+
+<form asp-controller="JWT" method="post">
+ <div class="row">
+    <div class="col-md-8">
+        <partial name="_JWT" model="Model"/>
+    </div>
+   
+ </div>
+ <div class="row">
+     <div class="col-md-8">
+         <partial name="_JWTClaims" model="Model" />
+     </div>
+ </div>
+ <div class="row mt-5">
+     <div class="col-md-6">
+         <input type="submit" class="btn btn-success" value="Generate Token">
+     </div>
+ </div>
+
+</form>
+
+
+
+
