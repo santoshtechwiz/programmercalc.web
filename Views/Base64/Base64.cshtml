@@ -1,5 +1,5 @@
-@{ 
-    
+@{
+
     ViewData["Title"] = "Programmers Calculator| String To Base64";
 }
 
@@ -8,11 +8,11 @@
         <form>
             <div class="form-group">
                 <label for="from">Enter String</label>
-                <textarea type="text" id="userInput" class="form-control" id="from" placeholder="Plain Text"></textarea>
+                <textarea type="text" id="userInput" class="form-control" rows="10" cols="10" id="from" placeholder="Plain Text"></textarea>
             </div>
             <div class="form-group">
                 <label for="to">Decoded String</label>
-                <textarea type="text" class="form-control" id="to" placeholder="Base64 Encoded"></textarea>
+                <textarea type="text" class="form-control" id="to" rows="10" cols="10" placeholder="Base64 Encoded"></textarea>
             </div>
             <div>
                 <input type="button" value="Convert" id="sendButton" class="btn btn-lg btn-success">
@@ -20,6 +20,7 @@
         </form>
     </div>
 </div>
+<google-adsense ad-client="ca-pub-7262226700898423" ad-slot="4896843197" />
 @section scripts{
     <script src="~/js/signalr/dist/browser/signalr.js"></script>
     <script src="~/js/base64.js"></script>

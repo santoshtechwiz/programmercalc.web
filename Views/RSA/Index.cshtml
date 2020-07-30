@@ -1,42 +1,73 @@
-@model programmercalc.web.Models.RSAViewModel
+﻿@model programmercalc.web.Models.RSAViewModel
 
-<div class="col-md-6">
-    <form>
+<div class="row">
+    <div class="col-md-6">
+        <form>
 
-        <div class="form-group">
-            <label for="plainText">Plain Text</label>
-            <textarea class="form-control" id="plainText" rows="3" asp-for="PlainText"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="cipherText">Encrypted Text</label>
-            <textarea class="form-control" id="cipherText" rows="3" asp-for="CipherText"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="publicKey">Public Key</label>
-            <textarea class="form-control" id="publicKey" rows="3" asp-for="PublicKey"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="privateKey">Private Key</label>
-            <textarea class="form-control" id="privateKey" rows="3" asp-for="PrivateKey"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="decryptedText">Decrypted Text</label>
-            <textarea class="form-control" id="decryptedText" rows="3" asp-for="DecryptedText"></textarea>
-        </div>
+            <div class="form-group">
+                <label for="plainText">Plain Text</label>
+                <textarea class="form-control" id="plainText" rows="3" asp-for="PlainText"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="cipherText">Encrypted Text</label>
+                <textarea class="form-control" id="cipherText" rows="3" asp-for="CipherText"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="publicKey">Public Key</label>
+                <textarea class="form-control" id="publicKey" rows="3" asp-for="PublicKey"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="privateKey">Private Key</label>
+                <textarea class="form-control" id="privateKey" rows="3" asp-for="PrivateKey"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="decryptedText">Decrypted Text</label>
+                <textarea class="form-control" id="decryptedText" rows="3" asp-for="DecryptedText"></textarea>
+            </div>
 
 
 
+
+            <p>
+                <input type="button" value="Generate RSA" id="sendButton" class="btn btn-primary" />
+            </p>
+
+
+        </form>
+    </div>
+    <div class="col-md-6">
 
         <p>
-            <input type="button" value="Generate RSA" id="sendButton" class="btn btn-primary" />
+            RSA Algorithm
+            RSA is an algorithm for public-key cryptography that is based on the presumed difficulty of factoring large integers, the factoring problem. RSA stands for Ron Rivest, Adi Shamir and Leonard Adleman, who first publicly described the algorithm in 1977
+
         </p>
 
+        <ul>
+            <li>Choose p = 3 and q = 11 </li>
+            <li>Compute n = p * q = 3 * 11 = 33 </li>
+            <li>Compute φ(n) = (p - 1) * (q - 1) = 2 * 10 = 20 </li>
+            <li>
+                Choose e such that 1 &lt; e &lt; φ(n) and e and n are coprime.
+                Let e = 7
+            </li>
+            <li>
+                Compute a value for d such that (d * e) % φ(n) = 1. One
+                solution is d = 3 [(3 * 7) % 20 = 1]
+            </li>
+            <li>Public key is (e, n) =&gt; (7, 33) </li>
+            <li>Private key is (d, n) =&gt; (3, 33) </li>
+            <li>The encryption of <i>m = 2</i> is <i>c = 2<sup>7</sup> % 33 = 29</i></li>
+            <li>The decryption of <i>c = 29</i> is <i>m = 29<sup>3</sup> % 33 = 2</i></li>
+        </ul>
 
-    </form>
+    </div>
 </div>
+<google-adsense ad-client="ca-pub-7262226700898423" ad-slot="4896843197" />
+
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-        <script src="~/js/signalr/dist/browser/signalr.js"></script>
-        <script src="~/js/rsa.js"></script>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/rsa.js"></script>
 
 }
